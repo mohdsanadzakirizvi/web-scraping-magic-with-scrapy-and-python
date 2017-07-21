@@ -18,7 +18,6 @@ NEWSPIDER_MODULE = 'ourfirstscraper.spiders'
 FEED_FORMAT = "csv"
 
 ITEM_PIPELINES = {
-   # 'ourfirstscraper.pipelines.OurfirstscraperPipeline': 300,
    'scrapy.pipelines.images.ImagesPipeline': 1
 }
 IMAGES_STORE = 'tmp/images/'
@@ -26,7 +25,7 @@ IMAGES_STORE = 'tmp/images/'
 #USER_AGENT = 'ourfirstscraper (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

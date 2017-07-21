@@ -1,11 +1,15 @@
 import scrapy
 
 class RedditSpider(scrapy.Spider):
+	#spider name
 	name = 'redditbot'
+	#list of allowed domains
 	allowed_domains = ['www.reddit.com/r/gameofthrones/']
+	#staring url for scraping
 	start_urls = ['https://www.reddit.com/r/gameofthrones/']
+	#location of csv file
 	custom_settings = {
-		'FEED_URI' : '../../tmp/reddit.csv'
+		'FEED_URI' : 'tmp/reddit.csv'
 	}
 
 	def parse(self, response):

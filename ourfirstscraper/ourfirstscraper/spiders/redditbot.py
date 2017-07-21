@@ -3,9 +3,6 @@ import scrapy
 class RedditSpider(scrapy.Spider):
 	name = "redditbot"
 	start_urls = ["https://www.reddit.com/r/gameofthrones/"]
-	custom_settings = {
-		"FEED_URI" : "../tmp/reddit.csv"
-	}
 
 	def parse(self, response):
 		#Extracting the content using css selectors

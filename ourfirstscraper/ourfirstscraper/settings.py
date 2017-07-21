@@ -14,7 +14,9 @@ BOT_NAME = 'ourfirstscraper'
 SPIDER_MODULES = ['ourfirstscraper.spiders']
 NEWSPIDER_MODULE = 'ourfirstscraper.spiders'
 
-
+#Export as CSV Feed
+FEED_EXPORT = "CSV"
+FEED_URI = "../tmp/reddit.csv"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'ourfirstscraper (+http://www.yourdomain.com)'
 

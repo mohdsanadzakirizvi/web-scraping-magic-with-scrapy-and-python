@@ -3,7 +3,7 @@ This repository contains the code for the article "Web Scraping Magic with Scrap
 
 Project Structure
 -----------------
-```python
+```
 .
 +-- ourfirstscraper
 

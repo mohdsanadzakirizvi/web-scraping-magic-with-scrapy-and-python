@@ -15,13 +15,18 @@ SPIDER_MODULES = ['ourfirstscraper.spiders']
 NEWSPIDER_MODULE = 'ourfirstscraper.spiders'
 
 #Export as CSV Feed
-FEED_EXPORT = "CSV"
-FEED_URI = "../tmp/reddit.csv"
+FEED_FORMAT = "csv"
+
+ITEM_PIPELINES = {
+   # 'ourfirstscraper.pipelines.OurfirstscraperPipeline': 300,
+   'scrapy.pipelines.images.ImagesPipeline': 1
+}
+IMAGES_STORE = 'tmp/images/'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'ourfirstscraper (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -66,9 +71,6 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'ourfirstscraper.pipelines.OurfirstscraperPipeline': 300,
-#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html

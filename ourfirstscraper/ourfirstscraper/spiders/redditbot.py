@@ -14,7 +14,7 @@ class RedditSpider(scrapy.Spider):
 
 	def parse(self, response):
 		#Extracting the content using css selectors(earlier logic)
-		titles = response.css('.title::text').extract()
+		titles = response.css('.title.may-blank::text').extract()
 		votes = response.css('.score.unvoted::text').extract()
 		times = response.css('time::attr(title)').extract()
 		comments = response.css('.comments::text').extract()

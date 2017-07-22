@@ -1,5 +1,5 @@
-# Web Scraping Magic with Scrapy and Python
-This repository contains the code for the article "Web Scraping Magic with Scrapy and Python"
+# Advanced Web Scraping in Python with Scrapy
+This repository contains the code for the article "Advanced Web Scraping in Python with Scrapy"
 
 Project Structure
 -----------------

@@ -1,5 +1,5 @@
-# Advanced Web Scraping in Python with Scrapy
-This repository contains the code for the article "Advanced Web Scraping in Python with Scrapy"
+# Web Scraping in Python using Scrapy (with multiple examples)
+This repository contains the code for the article "Web Scraping in Python using Scrapy (with multiple examples)" here -  https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/
 
 Project Structure
 -----------------
